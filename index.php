@@ -22,6 +22,9 @@
             </form>
         </div>
     </header>
+    <section>
+        <img src="img/travelmap.jpg" alt="">
+    </section>
 </body>
 
 </html>
