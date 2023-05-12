@@ -1,0 +1,58 @@
+* {
+    margin: 0%;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    background-color: rgba(87, 74, 226, 1);
+    justify-content: end;
+}
+
+p {
+    color: aliceblue;
+    padding: 3px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    background-color: rgba(34, 42, 104, 1);
+    justify-content: end;
+}
+
+.header-left {
+    display: flex;
+    width: 50%;
+    height: 50px;
+
+}
+
+.header-right {
+    display: flex;
+    width: 50%;
+    height: 50px;
+    align-items: center;
+    justify-content: end;
+    padding-right: 8px;
+}
+
+input {
+    height: 10px;
+    padding-bottom: 30px;
+    border-radius: 6px;
+}
+
+form {
+    display: flex;
+
+}
