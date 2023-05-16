@@ -11,7 +11,9 @@
 </head>
 
 <body>
+    <!-- knop die login overlay aanzet -->
     <button onclick="LoginOverlayOn()">Log in</button>
+    <!-- overlay die de achtergrond verduisterd en een login schermpje tevoorschijn haalt -->
     <div onclick="LoginOverlayOff()" id="overlay">
     </div>
     <div id="login-box">
