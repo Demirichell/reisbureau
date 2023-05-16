@@ -1,9 +1,13 @@
-function OverlayOn() {
-    var overlay = document.getElementById("overlay");
+var overlay = document.getElementById("overlay");
+var login = document.getElementById("login-box");
+
+//zet de login overlay 
+function LoginOverlayOn() {
     overlay.style.display = "block";
+    login.style.display = "block";
 }
 
-function OverlayOff() {
-    var overlay = document.getElementById("overlay");
+function LoginOverlayOff() {
     overlay.style.display = "none";
+    login.style.display = "none";
 }

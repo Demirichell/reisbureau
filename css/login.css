@@ -1,4 +1,15 @@
-.login-box {
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: none;
+}
+
+#login-box {
     background-color: #FAFBFF;
     height: 420px;
     width: 600px;
@@ -10,6 +21,7 @@
     bottom: 0;
     margin: auto;
     z-index: 11;
+    display: none;
 }
 
 .login-box-header {
@@ -52,15 +64,4 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 10;
-    display: none;
 }
