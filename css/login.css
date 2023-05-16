@@ -1,0 +1,40 @@
+.login-box {
+    background-color: #FAFBFF;
+    width: 500px;
+    border-radius: 8px;
+}
+
+.login-box-header {
+    background-color: #EAEFF5;
+    height: 50px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.login-form input {
+    width: 250px;
+    height: 30px;
+}
+
+.login-form input[type=submit] {
+    height: 30px;
+    width: 200px;
+    background-color: #77ADFF;
+    color: white;
+    border: none;
+}
+
+.login-btn-box {
+    display: flex;
+    justify-content: center;
+}
