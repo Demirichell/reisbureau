@@ -6,26 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/login.css">'
+    <script defer src="login.js"></script>
 </head>
 
 <body>
-    <div class="login-box">
-        <div class="login-box-header">
-            <h3>Inloggen</h3>
-        </div>
-        <div class="login-box-content">
-            <form class="login-form">
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email"><br>
-                <label for="password">Wachtwoord</label><br>
-                <input type="password" id="password" name="password"><br>
-                <a href="">Wachtwoord vergeten?</a><br>
-                Nog geen account? <span>Registreer hier!</span>
-                <div class="login-btn-box">
-                    <input class="login-btn" type="submit" value="Login">
-                </div>
-            </form>
+    <button onclick="OverlayOn()">Log in</button>
+    <div onclick="OverlayOff()" id="overlay">
+        <div class="login-box">
+            <div class="login-box-header">
+                <h3>Inloggen</h3>
+            </div>
+            <div class="login-box-content">
+                <form class="login-form">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="password">Wachtwoord</label><br>
+                    <input type="password" id="password" name="password"><br>
+                    <a href="">Wachtwoord vergeten?</a><br>
+                    Nog geen account? <span>Registreer hier!</span>
+                    <div class="login-btn-box">
+                        <input class="login-btn" type="submit" value="Login">
+                        <a href="">Inloggen voor beheerders</a>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </body>

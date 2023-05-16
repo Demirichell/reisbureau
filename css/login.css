@@ -1,12 +1,20 @@
 .login-box {
     background-color: #FAFBFF;
-    width: 500px;
+    height: 420px;
+    width: 600px;
     border-radius: 8px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 11;
 }
 
 .login-box-header {
     background-color: #EAEFF5;
-    height: 50px;
+    height: 15%;
     width: 100%;
     border-radius: 8px 8px 0 0;
     display: flex;
@@ -18,12 +26,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 85%;
 }
 
 .login-form input {
     width: 250px;
     height: 30px;
+    margin: 8px 0 8px 0;
 }
 
 .login-form input[type=submit] {
@@ -34,7 +43,24 @@
     border: none;
 }
 
+.login-form a {
+    color: #694CDC;
+    text-decoration: none;
+}
+
 .login-btn-box {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: none;
 }
