@@ -51,9 +51,16 @@
     </section>
 
     <section id="location">
-        <div>
 
+        <div class="headertext">
+            <h3> <b> Populaire bestemingen</b></h3>
         </div>
+
+        <div class="populairebestemingen">1</div>
+        <div class="populairebestemingen">1</div>
+        <div class="populairebestemingen">1</div>
+        <div class="populairebestemingen">1</div>
+
     </section>
 </body>
 

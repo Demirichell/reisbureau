@@ -98,7 +98,7 @@ img {
 .searchoptions {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: ir center;
     height: 80%;
     width: 16%;
     background-color: rgba(217, 217, 217, 1);
@@ -125,7 +125,8 @@ img {
     justify-content: center;
     height: 25%;
     width: 100%;
-    border: red 1px solid;
+
+
 }
 
 .iconssection {
@@ -146,6 +147,30 @@ img {
 }
 
 #location {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     height: 50%;
-    border: solid red 1px;
+
+}
+
+h3 {
+    color: rgba(34, 42, 104, 1);
+    font-size: x-large;
+
+}
+
+.headertext {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 20%;
+
+}
+
+.populairebestemingen {
+    height: 30%;
+    width: 25%;
+    background-color: blue;
 }
