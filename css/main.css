@@ -30,6 +30,13 @@ header {
     justify-content: end;
 }
 
+.logo {
+    height: 100%;
+    width: 20%;
+    margin-left: 10px;
+
+}
+
 .header-left {
     display: flex;
     width: 50%;
@@ -175,5 +182,3 @@ h3 {
     background-color: blue;
     margin: 10px;
 }
-
-.bestemming {}

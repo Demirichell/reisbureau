@@ -14,7 +14,9 @@
         <p>Log in</p>
     </nav>
     <header>
-        <div class="header-left"> 1</div>
+        <div class="header-left">
+            <img class="logo" src="./img/boendemi.png" alt="">
+        </div>
         <div class="header-right">
             <form class="searchform" action="/action_page.php">
                 <label for="gsearch"></label>
@@ -22,6 +24,7 @@
                 <input type="submit">
             </form>
         </div>
+
     </header>
     <section id="banner">
 
