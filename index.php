@@ -56,10 +56,10 @@
             <h3> <b> Populaire bestemingen</b></h3>
         </div>
 
-        <div class="populairebestemingen">1</div>
-        <div class="populairebestemingen">1</div>
-        <div class="populairebestemingen">1</div>
-        <div class="populairebestemingen">1</div>
+        <div class="populairebestemingen"> <img class="bestemming" src="./img/spain.jpg" alt="spain"></div>
+        <div class="populairebestemingen"><img src="./img/portugal.jpg" alt=""></div>
+        <div class="populairebestemingen"><img src="./img/greece.jpg" alt=""></div>
+        <div class="populairebestemingen"><img src="./img/france.jpg" alt=""></div>
 
     </section>
 </body>
