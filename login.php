@@ -7,10 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/login.css">
+    <script defer src="login.js"></script>
 </head>
 
 <body>
-    <div class="login-box">
+    <!-- knop die login overlay aanzet -->
+    <button onclick="LoginOverlayOn()">Log in</button>
+    <!-- overlay die de achtergrond verduisterd en een login schermpje tevoorschijn haalt -->
+    <div onclick="LoginOverlayOff()" id="overlay">
+    </div>
+    <div id="login-box">
         <div class="login-box-header">
             <h3>Inloggen</h3>
         </div>
@@ -24,6 +30,7 @@
                 Nog geen account? <span>Registreer hier!</span>
                 <div class="login-btn-box">
                     <input class="login-btn" type="submit" value="Login">
+                    <a href="">Inloggen voor beheerders</a>
                 </div>
             </form>
         </div>
