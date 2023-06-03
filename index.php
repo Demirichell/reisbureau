@@ -34,24 +34,23 @@
         <div class="options">
             <div class="searchoptions"><span class="material-symbols-outlined">
                     sunny
-                </span> bestemmingen </div>
+                </span>Bestemmingen </div>
             <div class="searchoptions"><span class="material-symbols-outlined">
                     calendar_month
-                </span> vertrekdatum</div>
+                </span>Vertrekdatum</div>
             <div class="searchoptions"><span class="material-symbols-outlined">
                     schedule
-                </span> Duur</div>
+                </span>Duur</div>
             <div class="searchoptions"> <span class="material-symbols-outlined">
                     flight
-                </span>vervoer</div>
-            <div class="searchbar"> search</div>
+                </span>Vervoer</div>
+            <div class="searchbar">Search</div>
         </div>
         <img src="img/travelmap.jpg" alt="">
     </section>
     <section id="icons">
         <div class="iconssection"><img class="imgicon" src="./img/ice-cream.png" alt=""> </div>
-        <div class="iconssection"><img class="imgicon" src="./img/beach-ball.png" alt="">
-        </div>
+        <div class="iconssection"><img class="imgicon" src="./img/beach-ball.png" alt=""></div>
         <div class="iconssection"><img class="imgicon" src="./img/sunny.png" alt=""></div>
         <div class="iconssection"><img class="imgicon" src="./img/flamingo.png" alt=""></div>
     </section>
@@ -62,10 +61,10 @@
             <h3> <b> Populaire bestemingen</b></h3>
         </div>
 
-        <div class="populairebestemingen"> <img class="bestemming" src="./img/spain.jpg" alt="spain"></div>
-        <div class="populairebestemingen"><img src="./img/portugal.jpg" alt=""></div>
-        <div class="populairebestemingen"><img src="./img/greece.jpg" alt=""></div>
-        <div class="populairebestemingen"><img src="./img/france.jpg" alt=""></div>
+        <div class="populardest_img"><img src="./img/spain.jpg" alt="spain"></div>
+        <div class="populardest_img"><img src="./img/portugal.jpg" alt=""></div>
+        <div class="populardest_img"><img src="./img/greece.jpg" alt=""></div>
+        <div class="populardest_img"><img src="./img/france.jpg" alt=""></div>
 
     </section>
 </body>
