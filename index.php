@@ -58,7 +58,7 @@
     <section id="location">
 
         <div class="headertext">
-            <h3> <b> Populaire bestemingen</b></h3>
+            <h3> <b>Populaire bestemmingen</b></h3>
         </div>
 
         <div class="populardest_img"><img src="./img/spain.jpg" alt="spain"></div>
