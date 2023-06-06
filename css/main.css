@@ -54,10 +54,10 @@ header {
     padding-right: 8px;
 }
 
-input {
+input #gsearch {
     height: 10px;
-    padding-bottom: 30px;
     border-radius: 6px;
+    height: 20%;
 }
 
 .seacrchform {

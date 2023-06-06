@@ -12,7 +12,11 @@
 
 <body>
     <nav>
+<<<<<<< Updated upstream
         <a href="aboutus.php">
+=======
+        <a href="./aboutus.php">
+>>>>>>> Stashed changes
             <p>Over Ons</p>
         </a>
         <p>Contact</p>
@@ -29,7 +33,6 @@
                 <input type="submit">
             </form>
         </div>
-
     </header>
     <section id="banner">
 
