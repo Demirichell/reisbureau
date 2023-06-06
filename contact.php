@@ -27,22 +27,6 @@
 
     </header>
     <section id="banner">
-
-        <div class="options">
-            <div class="searchoptions"><span class="material-symbols-outlined">
-                    sunny
-                </span> bestemmingen </div>
-            <div class="searchoptions"><span class="material-symbols-outlined">
-                    calendar_month
-                </span> vertrekdatum</div>
-            <div class="searchoptions"><span class="material-symbols-outlined">
-                    schedule
-                </span> Duur</div>
-            <div class="searchoptions"> <span class="material-symbols-outlined">
-                    flight
-                </span>vervoer</div>
-            <div class="searchbar"> search</div>
-        </div>
         <img src="img/travelmap.jpg" alt="">
     </section>
 </body>

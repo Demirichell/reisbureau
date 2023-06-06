@@ -14,6 +14,7 @@
 
 <body>
     <nav>
+<<<<<<< Updated upstream
         <a href="./aboutus.php">
             <p>Over Ons</p>
         </a>
@@ -42,6 +43,15 @@
                 </form>
             </div>
         </div>
+=======
+        <a href="aboutus.php">
+            <p>Over Ons</p>
+        </a>
+        <a href="contact.php">
+            <p>Contact</p>
+        </a>
+        <p>Log in</p>
+>>>>>>> Stashed changes
     </nav>
     <header>
         <div class="header-left">
