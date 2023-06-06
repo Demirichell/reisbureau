@@ -12,7 +12,9 @@
 
 <body>
     <nav>
-        <p>Over Ons</p>
+        <a href="aboutus.php">
+            <p>Over Ons</p>
+        </a>
         <p>Contact</p>
         <p>Log in</p>
     </nav>

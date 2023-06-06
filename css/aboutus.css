@@ -1,0 +1,70 @@
+.aboutus {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    width: 60%;
+    height: 10%;
+    z-index: 1000;
+    background-color: rgba(53, 53, 53, 0.489);
+    padding: 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgba(34, 42, 104, 1);
+    font-size: xx-large;
+}
+
+#aboutusbanner {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+
+#aboutuscontent {
+    display: flex;
+    justify-content: center;
+
+    height: 70%;
+    width: 100%;
+}
+
+.avatar {
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.contentleft {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: end;
+    width: 30%;
+}
+
+.contentright {
+    width: 70%;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+}
+
+h4 {
+    font-weight: 400;
+    padding: 10px;
+    text-align: start;
+}
+
+h2 {
+    padding: 10px;
+}
+
+.aboutustext {
+    height: 100%;
+    width: 70%;
+}
