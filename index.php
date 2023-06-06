@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/login.css">
+    <script defer src="login.js"></script>
 </head>
 
 <body>
@@ -16,7 +18,30 @@
             <p>Over Ons</p>
         </a>
         <p>Contact</p>
-        <p>Log in</p>
+        <!-- LOGIN SECTIE -->
+        <!-- knop die login overlay aanzet -->
+        <button onclick="LoginOverlayOn()">Log in</button>
+        <!-- overlay die de achtergrond verduisterd en een login schermpje tevoorschijn haalt -->
+        <div onclick="LoginOverlayOff()" id="overlay"></div>
+        <div id="login-box">
+            <div class="login-box-header">
+                <h3>Inloggen</h3>
+            </div>
+            <div class="login-box-content">
+                <form class="login-form">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="password">Wachtwoord</label><br>
+                    <input type="password" id="password" name="password"><br>
+                    <a href="">Wachtwoord vergeten?</a><br>
+                    Nog geen account? <span>Registreer hier!</span>
+                    <div class="login-btn-box">
+                        <input class="login-btn" type="submit" value="Login">
+                        <a href="">Inloggen voor beheerders</a>
+                    </div>
+                </form>
+            </div>
+        </div>
     </nav>
     <header>
         <div class="header-left">
