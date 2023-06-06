@@ -55,13 +55,6 @@
             </div>
         </div>
 
-        <section id="icons">
-        </section>
-
-        <section id="location">
-            <div class="headertext">
-            </div>
-        </section>
 </body>
 
 </html>
