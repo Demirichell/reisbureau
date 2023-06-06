@@ -37,7 +37,6 @@
         </div>
         <img src="img/travelmap.jpg" alt="">
     </section>
-<<<<<<< Updated upstream
     <section id="aboutuscontent">
         <div class="contentleft">
             <img class="avatar" src="./img/avataaarsBo.png" alt="">
@@ -55,15 +54,14 @@
                     ongeacht het budget of de reisvoorkeuren. Dus, of je nu een relaxte strandliefhebber bent, een avontuurlijke ontdekkingsreiziger of een cultuurminnaar, Bo en Demi staan klaar om je te helpen jouw ultieme reiservaring te creëren. Samen zullen we de wereld ontdekken en herinneringen creëren die een leven lang meegaan! Neem vandaag nog contact met ons op en laat ons je helpen bij het plannen van jouw volgende avontuur!</h4>
             </div>
         </div>
-=======
-    <section id="icons">
->>>>>>> Stashed changes
-    </section>
 
-    <section id="location">
-        <div class="headertext">
-        </div>
-    </section>
+        <section id="icons">
+        </section>
+
+        <section id="location">
+            <div class="headertext">
+            </div>
+        </section>
 </body>
 
 </html>

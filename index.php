@@ -12,15 +12,14 @@
 
 <body>
     <nav>
-<<<<<<< Updated upstream
-        <a href="aboutus.php">
-=======
-        <a href="./aboutus.php">
->>>>>>> Stashed changes
-            <p>Over Ons</p>
-        </a>
-        <p>Contact</p>
-        <p>Log in</p>
+        <<<<<<< Updated upstream <a href="aboutus.php">
+            =======
+            <a href="./aboutus.php">
+                >>>>>>> Stashed changes
+                <p>Over Ons</p>
+            </a>
+            <p>Contact</p>
+            <p>Log in</p>
     </nav>
     <header>
         <div class="header-left">
