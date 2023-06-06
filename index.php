@@ -14,11 +14,12 @@
 
 <body>
     <nav>
-<<<<<<< Updated upstream
         <a href="./aboutus.php">
             <p>Over Ons</p>
         </a>
-        <p>Contact</p>
+        <a href="contact.php">
+            <p>Contact</p>
+        </a>
         <!-- LOGIN SECTIE -->
         <!-- knop die login overlay aanzet -->
         <button onclick="LoginOverlayOn()">Log in</button>
@@ -43,15 +44,6 @@
                 </form>
             </div>
         </div>
-=======
-        <a href="aboutus.php">
-            <p>Over Ons</p>
-        </a>
-        <a href="contact.php">
-            <p>Contact</p>
-        </a>
-        <p>Log in</p>
->>>>>>> Stashed changes
     </nav>
     <header>
         <div class="header-left">
