@@ -28,7 +28,7 @@
                 <h3>Inloggen</h3>
             </div>
             <div class="login-box-content">
-                <form class="login-form">
+                <form class="login-form" action="./include/login.php" method="post">
                     <label for="email">Email</label><br>
                     <input type="email" id="email" name="email"><br>
                     <label for="password">Wachtwoord</label><br>
