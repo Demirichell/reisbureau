@@ -31,6 +31,9 @@
             </div>
             <div class="login-box-content">
                 <form class="login-form" action="./include/login.php" method="post">
+                    <?php if (isset($_GET['error'])) { ?>
+                        <p class="error"><?php echo $_GET['error']; ?></p>
+                    <?php } ?>
                     <label for="email">Email</label><br>
                     <input type="email" id="email" name="email"><br>
                     <label for="password">Wachtwoord</label><br>
