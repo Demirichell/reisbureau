@@ -41,7 +41,7 @@
                     <a href="">Wachtwoord vergeten?</a><br>
                     Nog geen account? <span>Registreer hier!</span>
                     <div class="login-btn-box">
-                        <input class="login-btn" type="submit" value="Login">
+                        <input class="login-btn" type="submit" value="Login" name="submit">
                         <a href="">Inloggen voor beheerders</a>
                     </div>
                 </form>
