@@ -15,26 +15,18 @@
     font-size: xx-large;
 }
 
-#aboutusbanner {
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    width: 100%;
-    height: 60%;
-    position: relative;
-}
+
 
 #aboutuscontent {
     display: flex;
     justify-content: center;
-
-    height: 70%;
+    height: 100%;
     width: 100%;
 }
 
 .avatar {
-    height: 50%;
-    width: 50%;
+    height: 80%;
+    width: 80%;
     object-fit: contain;
     padding: 10px;
 }
@@ -42,29 +34,102 @@
 .contentleft {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.contentmiddle {
+    display: flex;
+    justify-content: center;
     align-items: end;
-    justify-content: end;
-    width: 30%;
+    width: 25%;
+
+
 }
 
 .contentright {
-    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     text-align: center;
 }
 
 h4 {
     font-weight: 400;
-    padding: 10px;
+    margin-left: px;
     text-align: start;
+    padding-left: 80px;
+    padding-bottom: 100px;
 }
 
 h2 {
+    text-align: center;
     padding: 10px;
+    font-size: xx-large;
 }
 
-.aboutustext {
-    height: 100%;
-    width: 70%;
+h5 {
+    color: aliceblue;
+    font-size: xx-large;
+}
+
+
+.plane {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.waaromons {
+    background-color: rgba(113, 169, 247, 1);
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+}
+
+.material-symbols-outlined {
+    color: aliceblue;
+    padding: 6px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+p {
+    text-align: start;
+}
+
+.aboutusavatar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 50%;
+    background-color: lightgrey;
+    width: 40%;
+    margin: 6px;
+}
+
+.contenavatar {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    border: solid 4px rgba(113, 169, 247, 1);
+    ;
+}
+
+.bottemavatar {
+    width: 100%;
+    height: 40%;
+}
+
+.contact {
+    background-color: crimson;
+    height: 400px;
+    width: 300px;
 }
