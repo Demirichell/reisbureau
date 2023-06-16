@@ -20,6 +20,9 @@
         <a href="contact.php">
             <p>Contact</p>
         </a>
+        <a href="boekingen.php">
+            <p>boeken</p>
+        </a>
         <!-- LOGIN SECTIE -->
         <!-- knop die login overlay aanzet -->
         <button onclick="LoginOverlayOn()">Log in</button>
