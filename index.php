@@ -25,6 +25,7 @@
         <button onclick="LoginOverlayOn()">Log in</button>
         <!-- overlay die de achtergrond verduisterd en een login schermpje tevoorschijn haalt -->
         <div onclick="LoginOverlayOff()" id="overlay"></div>
+        <!-- login box overlay -->
         <div id="login-box">
             <div class="login-box-header">
                 <h3>Inloggen</h3>
@@ -39,15 +40,38 @@
                     <label for="password">Wachtwoord</label><br>
                     <input type="password" id="password" name="password"><br>
                     <a href="">Wachtwoord vergeten?</a><br>
-                    Nog geen account? <span>Registreer hier!</span>
+                    Nog geen account? <span onclick="RegisterOverlayOn()">Registreer hier!</span>
                     <div class="login-btn-box">
-                        <input class="login-btn" type="submit" value="Login" name="submit">
+                        <input type="submit" value="Login" name="submit">
                         <a href="">Inloggen voor beheerders</a>
                     </div>
                 </form>
             </div>
         </div>
+        <!-- registreer form -->
+        <div id="register-box">
+            <div class="login-box-header">
+                <h3>Registreren</h3>
+            </div>
+            <div class="login-box-content">
+                <form class="register-form" method="post">
+                    <label for="firstname">Voornaam</label><br>
+                    <input type="text" id="firstname" name="firstname"><br>
+                    <label for="lastname">Achternaam</label><br>
+                    <input type="text" id="lastname" name="lastname"><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="password">Wachtwoord</label><br>
+                    <input type="password" id="password" name="password"><br>
+                    <label for="phone">Telefoonnummer</label><br>
+                    <input type="number" id="phone" name="phone"><br>
+                    <span onclick="">Terug naar inloggen</span>
+                    <input type="submit" value="Registreren" name="submit">
+                </form>
+            </div>
+        </div>
     </nav>
+
     <header>
         <div class="header-left">
             <img class="logo" src="./img/boendemi.png" alt="">
