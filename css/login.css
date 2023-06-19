@@ -1,0 +1,80 @@
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: none;
+}
+
+#login-box,
+#register-box,
+#password-box,
+#admin-box {
+    background-color: #FAFBFF;
+    height: 420px;
+    width: 600px;
+    border-radius: 8px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 11;
+    display: none;
+}
+
+.login-box-header {
+    background-color: #EAEFF5;
+    height: 15%;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+}
+
+
+.login-form input,
+.register-form input,
+.password-form input,
+.admin-form input {
+    width: 250px;
+    height: 30px;
+    margin: 8px 0 8px 0;
+}
+
+.login-form input[type=submit],
+.register-form input[type=submit],
+.password-form input[type=submit],
+.admin-form input[type=submit] {
+    height: 30px;
+    width: 200px;
+    background-color: #77ADFF;
+    color: white;
+    border: none;
+}
+
+.login-form a,
+.register-form a,
+.password-form a,
+.admin-form a {
+    color: #694CDC;
+    text-decoration: none;
+}
+
+.login-btn-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
