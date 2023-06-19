@@ -50,7 +50,6 @@
                 </form>
             </div>
         </div>
-      
         <!-- admin login -->
         <div id="admin-box">
             <div class="login-box-header">

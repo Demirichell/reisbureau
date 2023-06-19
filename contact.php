@@ -26,36 +26,18 @@
                 <input type="submit">
             </form>
         </div>
-
     </header>
-
-    <section id="banner">
-        <?php
-        $Msg = "";
-        if (isset($_GET['error'])) {
-            $Msg = " Please Fill in the Blanks ";
-            echo '<div class="blanks">' . $Msg . '</div>';
-        }
-
-        if (isset($_GET['success'])) {
-            $Msg = " Your Message Has Been Sent ";
-            echo '<div class="succes">' . $Msg . '</div>';
-        }
-
-        ?>
-        <div class="succes">1</div>
-        <div class="blanks">1</div>
-        <div class="contact">
-            <form action="./include/contactemail.php" method="post">
-                <input type="text" name="UserName" placeholder="UserName">
-                <input type="email" name="Email" placeholder="Email">
-                <input type="text" name="Subject" placeholder="Subject" class="form-control mb-2">
-                <textarea name="msg" placeholder="Write The Message"></textarea>
-                <button class="btn btn-success" name="btn-send"> Send </button>
-            </form>
+        <h1>Contact us</h1>
+        <?php if (!empty($msg)) {
+            echo "<h2>$msg</h2>";
+        } ?>
+        <form method="post" action="./include/contactemail.php">
+            <label for="name">Name: <input type="text" name="name" id="name"></label><br>
+            <label for="subject">Subject: <input type="text" name="subject" id="subject"></label><br>
+            <label for="message">Message: <textarea name="message" id="message" rows="8" cols="20"></textarea></label><br>
+            <input type="submit" value="Send">
+        </form>
         </div>
-
-    </section>
 </body>
 
 </html>
