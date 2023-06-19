@@ -12,6 +12,7 @@ function LoginOverlayOn() {
 function LoginOverlayOff() {
     overlay.style.display = "none";
     login.style.display = "none";
+    register.style.dispay = "none";
 }
 
 function RegisterOverlayOn() {

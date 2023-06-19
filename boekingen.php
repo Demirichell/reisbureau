@@ -4,6 +4,7 @@
 <head>
     <title> Boendemi</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/boekingen.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
@@ -24,10 +25,29 @@
                 <input type="submit">
             </form>
         </div>
-
     </header>
-    <section id="banner">
-        <img src="img/travelmap.jpg" alt="">
+    <section id="bookings">
+        <div class="booking-box">
+            <?php
+            include './include/connect.php';
+
+            $stmt = $conn->prepare("SELECT * FROM trips;");
+            $stmt->execute();
+            $data = $stmt->fetchAll();
+
+            foreach ($data as $key => $value) : ?>
+                <div class="destination-label">
+                    <div class="destination-label-left">
+                        <p> <?php echo $value['name']; ?> </p>
+                        <p> <?php echo $value['description']; ?> </p>
+                    </div>
+                    <div class="destination-label-right">
+                        <p class="price"> <?php echo $value['price']; ?> </p>
+                        <button>Boeken</button>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
     </section>
 </body>
 

@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/boekingen.css">
     <script defer src="login.js"></script>
+
 </head>
 
 <body>
@@ -42,11 +44,11 @@
                     <input type="email" id="email" name="email"><br>
                     <label for="password">Wachtwoord</label><br>
                     <input type="password" id="password" name="password"><br>
-                    <a href="">Wachtwoord vergeten?</a><br>
-                    Nog geen account? <span onclick="RegisterOverlayOn()">Registreer hier!</span>
+                    <a>Wachtwoord vergeten?</a><br>
+                    Nog geen account? <a onclick="RegisterOverlayOn()">Registreer hier!</a>
                     <div class="login-btn-box">
                         <input type="submit" value="Login" name="submit">
-                        <a href="">Inloggen voor beheerders</a>
+                        <a>Inloggen voor beheerders</a>
                     </div>
                 </form>
             </div>
@@ -113,17 +115,29 @@
         <div class="iconssection"><img class="imgicon" src="./img/flamingo.png" alt=""></div>
     </section>
 
-    <section id="location">
+    <section id="destinations">
 
         <div class="headertext">
-            <h3> <b>Populaire bestemmingen</b></h3>
+            <h3> <b>Onze bestemmingen</b></h3>
         </div>
 
-        <div class="populardest_img"><img src="./img/spain.jpg" alt="spain"></div>
-        <div class="populardest_img"><img src="./img/portugal.jpg" alt=""></div>
-        <div class="populardest_img"><img src="./img/greece.jpg" alt=""></div>
-        <div class="populardest_img"><img src="./img/france.jpg" alt=""></div>
+        <?php
+        include './include/connect.php';
 
+        $stmt = $conn->prepare("SELECT * FROM trips;");
+        $stmt->execute();
+        $data = $stmt->fetchAll();
+
+        foreach ($data as $key => $value) : ?>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo $value['name']; ?> </h5>
+                    <p class="card-text"><?php echo $value['description']; ?></p>
+                    <a href="#" class="btn btn-primary">Meer informatie</a>
+                </div>
+            </div>
+        <?php endforeach; ?>
     </section>
 </body>
 

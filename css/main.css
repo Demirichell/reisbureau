@@ -154,7 +154,7 @@ img {
     object-fit: contain;
 }
 
-#location {
+#destinations {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
