@@ -9,7 +9,14 @@
     display: none;
 }
 
+<<<<<<< Updated upstream
 #login-box {
+=======
+#login-box,
+#register-box,
+#password-box,
+#admin-box {
+>>>>>>> Stashed changes
     background-color: #FAFBFF;
     height: 420px;
     width: 600px;
@@ -41,13 +48,27 @@
     height: 85%;
 }
 
+<<<<<<< Updated upstream
 .login-form input {
+=======
+.login-form input,
+.register-form input,
+.password-form input,
+.admin-form input {
+>>>>>>> Stashed changes
     width: 250px;
     height: 30px;
     margin: 8px 0 8px 0;
 }
 
+<<<<<<< Updated upstream
 .login-form input[type=submit] {
+=======
+.login-form input[type=submit],
+.register-form input[type=submit],
+.password-form input[type=submit],
+.admin-form input[type=submit] {
+>>>>>>> Stashed changes
     height: 30px;
     width: 200px;
     background-color: #77ADFF;
@@ -55,7 +76,14 @@
     border: none;
 }
 
+<<<<<<< Updated upstream
 .login-form a {
+=======
+.login-form a,
+.register-form a,
+.password-form a,
+.admin-form a {
+>>>>>>> Stashed changes
     color: #694CDC;
     text-decoration: none;
 }
