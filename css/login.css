@@ -10,7 +10,9 @@
 }
 
 #login-box,
-#register-box {
+#register-box,
+#password-box,
+#admin-box {
     background-color: #FAFBFF;
     height: 420px;
     width: 600px;
@@ -42,15 +44,20 @@
     height: 85%;
 }
 
+
 .login-form input,
-.register-form input {
+.register-form input,
+.password-form input,
+.admin-form input {
     width: 250px;
     height: 30px;
     margin: 8px 0 8px 0;
 }
 
 .login-form input[type=submit],
-.register-form input[type=submit] {
+.register-form input[type=submit],
+.password-form input[type=submit],
+.admin-form input[type=submit] {
     height: 30px;
     width: 200px;
     background-color: #77ADFF;
@@ -59,7 +66,9 @@
 }
 
 .login-form a,
-.register-form a {
+.register-form a,
+.password-form a,
+.admin-form a {
     color: #694CDC;
     text-decoration: none;
 }

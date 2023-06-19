@@ -5,7 +5,7 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $stmt = $conn->prepare("SELECT * FROM users WHERE email=:email AND password=:password");
+    $stmt = $conn->prepare("SELECT * FROM admins WHERE email=:email AND password=:password");
     $stmt->bindParam(':email', $email);
     $stmt->bindParam(':password', $password);
     $stmt->execute();
@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) {
 
     if (isset($value['email'])) {
         session_start();
-        $_SESSION['user'] = array(
+        $_SESSION['admin'] = array(
             'email' => $value['email'],
             'firstname' => $value['firstname'],
             'lastname' => $value['lastname']
