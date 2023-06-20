@@ -165,7 +165,7 @@
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $value['name']; ?> </h5>
-                    <p class="card-text"><?php echo $value['description']; ?></p>
+                    <p class="card-text"><?php echo $value['description'] = substr($value['description'], 0, strpos($value['description'], " ", 60)), '...'; ?></p>
                     <a href="#" class="btn btn-primary">Meer informatie</a>
                 </div>
             </div>
