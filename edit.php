@@ -1,7 +1,7 @@
 <?php include_once('include/connect.php');
 
 
-$stmt = $conn->prepare("SELECT * FROM trips WHERE id =':id' ");
+$stmt = $conn->prepare("SELECT * FROM trips WHERE id =:id");
 $stmt->execute(['id' => $_GET['id']]);
 $data = $stmt->fetch();
 if (isset($_POST["veranderen"])) {
