@@ -161,7 +161,7 @@
             $data = $stmt->fetchAll();
 
             foreach ($data as $key => $value) : ?>
-                <a href="tripinformation.php/<?php echo $value['id'] ?>">
+                <a href="tripinformation.php?id=<?php echo $value['id'] ?>">
                     <div class="card">
                         <img src="<?php echo $value['path']; ?>" class="card-img-top" alt="Destination">
                         <div class="card-body">
