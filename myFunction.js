@@ -1,6 +1,6 @@
 function myFunction() {
-return confirm ("weet u zeker dat u het wilt verwijderen?")
+    return confirm("Weet u zeker dat u het wilt verwijderen?")
 }
-function addGerecht () {
-return confirm ("weet u zeker dat u dit gerecht wit toevoegen")
+function addGerecht() {
+    return confirm("Weet u zeker dat u deze reis wit toevoegen?")
 }
