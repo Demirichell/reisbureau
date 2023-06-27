@@ -197,7 +197,7 @@ h3 {
 
 .card-img-top {
     height: 50%;
-    width: 300px;
+    width: 800px;
 }
 
 .card-price {
@@ -211,4 +211,33 @@ h3 {
 
 a {
     text-decoration: none;
+}
+
+.large-card {
+    width: 600px;
+    min-height: 500px;
+    border: rgb(207, 205, 205) solid 1px;
+    box-shadow: 2px 2px 8px rgb(191, 192, 197);
+}
+
+.large-card p {
+    color: black;
+}
+
+.booking-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox-left,
+.flexbox-right {
+    width: 600px;
+}
+
+.flexbox-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

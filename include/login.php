@@ -14,9 +14,7 @@ if (isset($_POST['submit'])) {
     if (isset($value['email'])) {
         session_start();
         $_SESSION['user'] = array(
-            'email' => $value['email'],
-            'firstname' => $value['firstname'],
-            'lastname' => $value['lastname']
+            'id' => $value['id']
         );
         header("location:../index.php");
     } else {
