@@ -133,3 +133,17 @@ p {
     height: 400px;
     width: 300px;
 }
+
+input[type=submit] {
+    background-color: rgba(113, 169, 247, 1);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(6, 48, 108);
+    ;
+}

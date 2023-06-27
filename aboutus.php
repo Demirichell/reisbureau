@@ -85,6 +85,8 @@
 
             <div class="contact">
                 <h5> Contact?</h5>
+                <a href="contact.php"> <button>Contact</button></a>
+
             </div>
         </div>
 
