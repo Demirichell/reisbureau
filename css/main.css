@@ -177,9 +177,34 @@ h3 {
 
 }
 
-.populardest_img {
-    height: 70%;
-    width: 15%;
-    background-color: blue;
-    margin: 10px;
+.card-box {
+    width: 1600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    min-height: 450px;
+    border: rgb(207, 205, 205) solid 1px;
+    box-shadow: 2px 2px 8px rgb(191, 192, 197);
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-img-top {
+    height: 50%;
+    width: 300px;
+}
+
+.card-price {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.card-title {
+    font-size: 24px;
 }
