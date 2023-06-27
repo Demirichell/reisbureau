@@ -148,30 +148,8 @@
     </section>
 
     <section id="destinations">
-
-        <div class="headertext">
-            <h3> <b>Onze bestemmingen</b></h3>
-        </div>
         <div class="card-box">
-            <?php
-            include './include/connect.php';
 
-            $stmt = $conn->prepare("SELECT * FROM trips;");
-            $stmt->execute();
-            $data = $stmt->fetchAll();
-
-            foreach ($data as $key => $value) : ?>
-                <a href="tripinformation.php/<?php echo $value['id'] ?>">
-                    <div class="card">
-                        <img src="<?php echo $value['path']; ?>" class="card-img-top" alt="Destination">
-                        <div class="card-body">
-                            <h5 class="card-title"><?php echo $value['name']; ?> </h5>
-                            <p class="card-text"><?php echo $value['description'] = substr($value['description'], 0, strpos($value['description'], " ", 60)), '...'; ?></p>
-                            <p class="card-price">€<?php echo $value['price']; ?></p>
-                        </div>
-                    </div>
-                </a>
-            <?php endforeach; ?>
         </div>
     </section>
 </body>
