@@ -17,36 +17,25 @@
 <body>
     <?php include_once 'header.php'; ?>
     <section id="banner">
+        <?php
+        include_once './connect.php';
 
-        <div class="options">
-            <div class="searchoptions"><span class="material-symbols-outlined">
-                    sunny
-                </span>Bestemmingen </div>
-            <div class="searchoptions"><span class="material-symbols-outlined">
-                    calendar_month
-                </span>Vertrekdatum</div>
-            <div class="searchoptions"><span class="material-symbols-outlined">
-                    schedule
-                </span>Duur</div>
-            <div class="searchoptions"> <span class="material-symbols-outlined">
-                    flight
-                </span>Vervoer</div>
-            <div class="searchbar">Search</div>
+        $stmt = $conn->prepare("SELECT * FROM trips WHERE id = :id");
+        $stmt->bindParam(':id', $_GET['id']);
+        $stmt->execute();
+        $data = $stmt->fetch();
+        ?>
+        <div class="card">
+            <img src="<?php echo $data['path']; ?>" class="card-img-top" alt="Destination">
+            <div class="card-body">
+                <h5 class="card-title"><?php echo $data['name']; ?> </h5>
+                <p class="card-text"><?php echo $data['description'] = substr($data['description'], 0, strpos($value['description'], " ", 60)), '...'; ?></p>
+                <p class="card-price">€<?php echo $data['price']; ?></p>
+            </div>
         </div>
-        <img src="img/travelmap.jpg" alt="">
-    </section>
-    <section id="icons">
-        <div class="iconssection"><img class="imgicon" src="./img/ice-cream.png" alt=""> </div>
-        <div class="iconssection"><img class="imgicon" src="./img/beach-ball.png" alt=""></div>
-        <div class="iconssection"><img class="imgicon" src="./img/sunny.png" alt=""></div>
-        <div class="iconssection"><img class="imgicon" src="./img/flamingo.png" alt=""></div>
-    </section>
+        </a>
 
-    <section id="destinations">
-        <div class="card-box">
 
-        </div>
-    </section>
 </body>
 
 </html>
