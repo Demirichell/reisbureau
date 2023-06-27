@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+    <link rel="stylesheet" href="./css/login.css">
     <div class="itemtoevoegen">
         <?php if (isset($message) && !empty($message)) {
             echo $message;
