@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION['user_id'] = 'id';
 ?>
 
 <!DOCTYPE html>
@@ -21,9 +22,8 @@ session_start();
 <body>
 
     <?php include_once 'header.php'; ?>
-    <section id="banner">
-        <?php
-        include_once './connect.php';
+    <?php
+    include './include/connect.php';
 
     $id = $_GET['id'];
     $stmt = $conn->prepare("SELECT * FROM trips WHERE id='$id'");
@@ -43,7 +43,7 @@ session_start();
         </div>
 
         <?php
-        if (isset($_SESSION['user'])) :
+        if (isset($_SESSION['user']) || isset($_SESSION['admin'])) :
         ?>
             <div class="flexbox-right">
                 <form class="booking-form" action='./include/insertbooking.php?id=<?php echo $data['id'] ?>' method="post">
@@ -56,10 +56,8 @@ session_start();
                     <input class="addbutton" type="submit" value="Boeken" name="submit">
                 </form>
             </div>
-
-
+        <?php endif; ?>
 
 </body>
 
 </html>
-<?php endif; ?>
