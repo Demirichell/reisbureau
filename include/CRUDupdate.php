@@ -1,23 +1,23 @@
 <?php
-include_once './include/connect.php';
+include_once 'connect.php';
 
 $stmt = $conn->prepare("SELECT * FROM trips WHERE id = :id");
-
 $stmt->execute(['id' => $_GET['id']]);
 $data = $stmt->fetch();
 
-if (isset($_POST['editsubmit'])) {
+if (isset($_POST['veranderen'])) {
     $stmt = $conn->prepare("UPDATE trips SET
-                    name = :name,
+                    hotel = :hotel,
                     description = :description,
                     price = :price,
                     path = :path
                     WHERE id = :id
                     ");
-    $stmt->bindParam(':name', $_POST['name']);
+    $stmt->bindParam(':hotel', $_POST['hotel']);
     $stmt->bindParam(':description', $_POST['description']);
     $stmt->bindParam(':price', $_POST['price']);
-    $stmt->bindParam(':img', $_POST['image']);
+    $stmt->bindParam(':path', $_POST['path']);
     $stmt->bindParam(':id', $data['id']);
     $stmt->execute();
+    header("location: ../admin.php");
 }

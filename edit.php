@@ -3,40 +3,11 @@
 
 <?php
 session_start();
+include './include/CRUDupdate.php';
 if (isset($_SESSION['admin'])) :
-
-    include_once('include/connect.php');
-
-
-    $stmt = $conn->prepare("SELECT * FROM trips WHERE id =:id");
-    $stmt->execute(['id' => $_GET['id']]);
-    $data = $stmt->fetch();
-    if (isset($_POST["veranderen"])) {
-
-        $sql = "UPDATE trips SET
-        name = :name,
-        description = :description ,
-        price = :price, 
-        img = :img
-        WHERE ID =:id";
-
-
-        $stmt = $conn->prepare($sql);
-        $stmt->bindParam(':name', $_POST['name']);
-        $stmt->bindParam(':description ', $_POST['description ']);
-        $stmt->bindParam(':price', $_POST['price']);
-        $stmt->bindParam(':path', $_POST['path']);
-        $stmt->bindParam(':id', $data['id']);
-        $stmt->execute();
-        //$stmt->debugDumpParams();
-        header("location: admin.php");
-    }
-
 ?>
     <!DOCTYPE html>
     <html lang="en">
-    >>>>>>> dee2ab86dcf52fb1bbca71c6fd19b8f1f2222b92
-
 
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,27 +24,15 @@ if (isset($_SESSION['admin'])) :
                 }
                 ?>
 
-
-                <form action="edit.php" method="post">
-                    <input type="text" name="name" id="" value="<?php echo $data['name']; ?>" placeholder="naam">
-                    <input type="text" name="description" id="" value="<?php echo $data['beschrijving']; ?>" placeholder="beschrijving">
+                <form action="./include/CRUDupdate.php?id=<?php echo $data['id'] ?>" method="post">
+                    <input type="text" name="hotel" id="" value="<?php echo $data['hotel']; ?>" placeholder="naam">
+                    <input type="text" name="description" id="" value="<?php echo $data['description']; ?>" placeholder="beschrijving">
                     <input type="text" name="price" id="" value="<?php echo $data['price']; ?>" placeholder="prijs">
                     <input type="text" name="path" id="" value="<?php echo $data['path']; ?>" placeholder="img">
                     <input type="submit" value="veranderen" name="veranderen">
                 </form>
             </div>
     </body>
-
-    <form action="" method="post">
-        <input type="text" name="name" id="" value="<?php echo $data['name']; ?>" placeholder="naam">
-        <input type="text" name="description" id="" value="<?php echo $data['beschrijving']; ?>" placeholder="beschrijving">
-        <input type="text" name="price" id="" value="<?php echo $data['price']; ?>" placeholder="prijs">
-        <input type="text" name="path" id="" value="<?php echo $data['path']; ?>" placeholder="img">
-        <input type="submit" value="veranderen" name="veranderen">
-    </form>
-    </div>
-    </body>
-
 
     </html>
 <?php else :

@@ -21,7 +21,8 @@ session_start();
 </head>
 
 <body>
-    <?php include_once 'header.php'; ?>
+    <?php include_once 'header.php';
+    ?>
 
     <section id="banner">
         <div class="options">

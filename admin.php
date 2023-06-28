@@ -24,7 +24,7 @@ if (isset($_SESSION['admin'])) :
 
         include './include/connect.php';
 
-        $stmt = $conn->prepare("SELECT * FROM trips;");
+        $stmt = $conn->prepare("SELECT * FROM trips");
         $stmt->execute();
         $data = $stmt->fetchAll();
 
@@ -32,12 +32,12 @@ if (isset($_SESSION['admin'])) :
             <div class="card" style="width: 18rem;">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title"><?php echo $value['name']; ?> </h5>
+                    <h5 class="card-title"><?php echo $value['hotel']; ?> </h5>
                     <p class="card-text"><?php echo $value['price']; ?></p>
                     <p class="card-text"><?php echo $value['description']; ?></p>
                     <a onclick="myFunction()" href="./include/delete.php?id=<?php echo $value['id']; ?>">delete</a>
                     <button><a href="insert.php">insert</a></button>
-                    <a href="edit.php"> edit</a>
+                    <a href="edit.php?id=<?php echo $value['id'] ?>"> edit</a>
                 </div>
 
             <?php endforeach; ?>

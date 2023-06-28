@@ -18,6 +18,12 @@ if (isset($_SESSION['admin'])) :
             <?php if (isset($message) && !empty($message)) {
                 echo $message;
             }
+
+            include_once './include/connect.php';
+
+            $stmt = $conn->prepare("SELECT * FROM trips;");
+            $stmt->execute();
+            $data = $stmt->fetchAll();
             ?>
 
             <form action='./include/CRUDinsert.php' method="post">
