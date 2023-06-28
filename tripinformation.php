@@ -35,7 +35,7 @@ $_SESSION['user_id'] = 'id';
             <div class="large-card">
                 <img src="<?php echo $data['path']; ?>" class="large-card-img-top" alt="Destination">
                 <div class="card-body">
-                    <h5 class="card-title"><?php echo $data['name']; ?> </h5>
+                    <h5 class="card-title"><?php echo $data['hotel']; ?> </h5>
                     <p class="card-text"><?php echo $data['description'] ?></p>
                     <p class="card-price">€<?php echo $data['price']; ?></p>
                 </div>
