@@ -182,6 +182,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .card {
@@ -211,4 +212,48 @@ h3 {
 
 a {
     text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: rgb(6, 48, 108);
+    }
+
+    #banner {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        width: 100%;
+        height: 30%;
+        position: relative;
+    }
+
+    .card {
+        width: 200px;
+        height: 300px;
+        border: rgb(207, 205, 205) solid 1px;
+        box-shadow: 2px 2px 8px rgb(191, 192, 197);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        background-color: rgb(6, 48, 108);
+    }
+
+    #banner {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        width: 100%;
+        height: 30%;
+        position: relative;
+    }
+
+    .card {
+        width: 200px;
+        height: 300px;
+        border: rgb(207, 205, 205) solid 1px;
+        box-shadow: 2px 2px 8px rgb(191, 192, 197);
+    }
 }

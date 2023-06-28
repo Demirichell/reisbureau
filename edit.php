@@ -1,31 +1,3 @@
-<?php include_once('include/connect.php');
-
-
-$stmt = $conn->prepare("SELECT * FROM trips WHERE id =:id");
-$stmt->execute(['id' => $_GET['id']]);
-$data = $stmt->fetch();
-if (isset($_POST["veranderen"])) {
-
-    $sql = "UPDATE trips SET
-        name = :name,
-        description = :description ,
-        price = :price, 
-        img = :img
-        WHERE ID =:id";
-
-
-    $stmt = $conn->prepare($sql);
-    $stmt->bindParam(':name', $_POST['name']);
-    $stmt->bindParam(':description ', $_POST['description ']);
-    $stmt->bindParam(':price', $_POST['price']);
-    $stmt->bindParam(':path', $_POST['path']);
-    $stmt->bindParam(':id', $data['id']);
-    $stmt->execute();
-    //$stmt->debugDumpParams();
-    header("location: admin.php");
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,7 +17,7 @@ if (isset($_POST["veranderen"])) {
             }
             ?>
 
-            <form action="" method="post">
+            <form action="edit.php" method="post">
                 <input type="text" name="name" id="" value="<?php echo $data['name']; ?>" placeholder="naam">
                 <input type="text" name="description" id="" value="<?php echo $data['beschrijving']; ?>" placeholder="beschrijving">
                 <input type="text" name="price" id="" value="<?php echo $data['price']; ?>" placeholder="prijs">

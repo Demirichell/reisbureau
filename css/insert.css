@@ -12,8 +12,7 @@ body {
 }
 
 .itemtoevoegen {
-    background-color: rgba(0, 0, 0, 0.736);
-    border-radius: 12px;
+    background-color: rgba(0, 42, 106, 0.736);
     height: 50vh;
     width: 40vw;
     display: flex;
@@ -33,13 +32,13 @@ form {
 
 input {
     width: 60%;
-    background-color: #000000;
+    background-color: #ffffff;
     margin: 6px;
 
 }
 
 .addbutton {
-    background-color: crimson;
+    background-color: rgb(8, 53, 112);
     color: white;
     padding: 14px 25px;
     text-align: center;
