@@ -35,7 +35,6 @@ header {
     height: 100%;
     width: 20%;
     margin-left: 10px;
-
 }
 
 .header-left {
@@ -197,7 +196,7 @@ h3 {
 
 .card-img-top {
     height: 50%;
-    width: 800px;
+    width: 300px;
 }
 
 .card-price {
@@ -220,7 +219,8 @@ a {
     box-shadow: 2px 2px 8px rgb(191, 192, 197);
 }
 
-.large-card p {
+.large-card p,
+.card p {
     color: black;
 }
 
@@ -240,4 +240,10 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.logout-btn {
+    background-color: rgb(233, 233, 233);
+    border: solid black 1px;
+    font-size: 14px;
 }
