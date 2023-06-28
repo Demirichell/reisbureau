@@ -5,6 +5,19 @@
         <a href="contact.php">
             <p>Contact</p>
         </a>
+<<<<<<< Updated upstream
+=======
+        <?php
+        if (isset($_SESSION['admin'])) :
+        ?>
+            <a href="admin.php">
+                <p>Beheren reizen</p>
+            </a>
+            <a href="adminbookings.php">
+                <p>Beheren boekingen</p>
+            </a>
+        <?php endif; ?>
+>>>>>>> Stashed changes
         <!-- LOGIN SECTIE -->
         <!-- knop die login overlay aanzet -->
         <button onclick="LoginOverlayOn()">Log in</button>

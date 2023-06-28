@@ -240,4 +240,23 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+<<<<<<< Updated upstream
+=======
+}
+
+.logout-btn {
+    background-color: rgb(233, 233, 233);
+    border: solid black 1px;
+    font-size: 14px;
+}
+
+td {
+    border: solid black 1px;
+    min-width: 100px;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+>>>>>>> Stashed changes
 }
