@@ -27,7 +27,7 @@ if (isset($_SESSION['admin'])) :
             ?>
 
             <form action='./include/CRUDinsert.php' method="post">
-                <input type="text" name="name" placeholder="naam bestemming"><br>
+                <input type="text" name="hotel" placeholder="naam bestemming"><br>
                 <input type="text" name="description" placeholder="beschrijving"><br>
                 <input type="text" name="price" placeholder="prijs"><br>
                 <input type="text" name="path" placeholder="img url"><br>
