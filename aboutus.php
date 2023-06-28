@@ -19,7 +19,6 @@ session_start();
 <body>
     <?php include_once 'header.php'; ?>
     <section id="banner">
-        <img class="plane" src="img/eva-darron-oCdVtGFeDC0-unsplash.jpg" alt="">
         <section id="aboutuscontent">
             <div class="contentleft">
                 <h2> Over ons</h2>

@@ -110,7 +110,7 @@ p {
     flex-wrap: wrap;
     height: 50%;
     background-color: lightgrey;
-    width: 40%;
+    width: 300px;
     margin: 6px;
 }
 
@@ -119,7 +119,6 @@ p {
     justify-content: center;
     height: 50%;
     width: 100%;
-    border: solid 4px rgba(113, 169, 247, 1);
     ;
 }
 
