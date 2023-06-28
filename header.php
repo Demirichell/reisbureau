@@ -5,14 +5,19 @@
         <a href="contact.php">
             <p>Contact</p>
         </a>
+
         <?php
         if (isset($_SESSION['admin'])) :
         ?>
             <a href="admin.php">
-                <p>Beheren</p>
+                <p>Beheren reizen</p>
+            </a>
+            <a href="adminbookings.php">
+                <p>Beheren boekingen</p>
             </a>
         <?php endif; ?>
-        <!-- LOGIN SECTIE -->
+
+     <!-- LOGIN SECTIE -->
         <!-- knop die login overlay aanzet -->
         <?php
         if (!isset($_SESSION['user']) && !isset($_SESSION['admin'])) :

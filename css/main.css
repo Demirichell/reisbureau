@@ -247,3 +247,13 @@ a {
     border: solid black 1px;
     font-size: 14px;
 }
+
+td {
+    border: solid black 1px;
+    min-width: 100px;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+}
