@@ -64,7 +64,7 @@ session_start();
                     <div class="card">
                         <img src="<?php echo $value['path']; ?>" class="card-img-top" alt="Destination">
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo $value['name']; ?> </h5>
+                            <h5 class="card-title"><?php echo $value['hotel']; ?> </h5>
                             <p class="card-text"><?php echo $value['description'] = substr($value['description'], 0, strpos($value['description'], " ", 60)), '...'; ?></p>
                             <p class="card-price">€<?php echo $value['price']; ?></p>
                         </div>
