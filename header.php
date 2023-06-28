@@ -5,9 +5,30 @@
         <a href="contact.php">
             <p>Contact</p>
         </a>
-        <!-- LOGIN SECTIE -->
+
+        <?php
+        if (isset($_SESSION['admin'])) :
+        ?>
+            <a href="admin.php">
+                <p>Beheren reizen</p>
+            </a>
+            <a href="adminbookings.php">
+                <p>Beheren boekingen</p>
+            </a>
+        <?php endif; ?>
+
+     <!-- LOGIN SECTIE -->
         <!-- knop die login overlay aanzet -->
-        <button onclick="LoginOverlayOn()">Log in</button>
+        <?php
+        if (!isset($_SESSION['user']) && !isset($_SESSION['admin'])) :
+        ?>
+            <button onclick="LoginOverlayOn()">Log in</button>
+        <?php endif;
+
+        if (isset($_SESSION['user']) || isset($_SESSION['admin'])) :
+        ?>
+            <a class="logout-btn" href="./include/logout.php">Log uit</a>
+        <?php endif; ?>
         <!-- overlay die de achtergrond verduisterd en een login schermpje tevoorschijn haalt -->
         <div onclick="LoginOverlayOff()" id="overlay"></div>
         <!-- login box overlay -->
@@ -94,7 +115,9 @@
 
     <header>
         <div class="header-left">
-            <img class="logo" src="./img/boendemi.png" alt="">
+            <a href="index.php" class="logo">
+                <img src="./img/boendemi.png" alt="">
+            </a>
         </div>
         <div class="header-right">
             <form class="searchform" action="/action_page.php">
